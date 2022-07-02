@@ -1,29 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+  
 <!DOCTYPE html>
-<!--
-Author: Keenthemes
-Product Name: Metronic - Bootstrap 5 HTML, VueJS, React, Angular & Laravel Admin Dashboard Theme
-Purchase: https://1.envato.market/EA4JP
-Website: http://www.keenthemes.com
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Dribbble: www.dribbble.com/keenthemes
-Like: www.facebook.com/keenthemes
-License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
--->
 <html lang="en">
 	<!--begin::Head-->
 	<head><base href="">
-		<title>Metronic - the world's #1 selling Bootstrap Admin Theme Ecosystem for HTML, Vue, React, Angular &amp; Laravel by Keenthemes</title>
+		<title>Health Checkup</title>
 		<meta charset="utf-8" />
-		<meta name="description" content="The most advanced Bootstrap Admin Theme on Themeforest trusted by 94,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue &amp; Laravel versions. Grab your copy now and get life-time updates for free." />
-		<meta name="keywords" content="Metronic, bootstrap, bootstrap 5, Angular, VueJs, React, Laravel, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta property="og:locale" content="en_US" />
-		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Metronic - Bootstrap 5 HTML, VueJS, React, Angular &amp; Laravel Admin Dashboard Theme" />
-		<meta property="og:url" content="https://keenthemes.com/metronic" />
-		<meta property="og:site_name" content="Keenthemes | Metronic" />
-		<link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
 		<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
 		<!--begin::Fonts-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
@@ -57,7 +40,7 @@ License: For each use you must have a valid license purchased only from above li
 							<div class="w-lg-500px p-10 p-lg-15 mx-auto">
 								<!--begin::Form-->
 								<form class="form w-100 fv-plugins-bootstrap5 fv-plugins-framework" novalidate="novalidate" id="kt_sign_in_form"
-									action="#">
+									action="login">
 									<!--begin::Heading-->
 									<div class="text-center mb-10">
 										<!--begin::Title-->
@@ -72,7 +55,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--end::Label-->
 										<!--begin::Input-->
 										<input class="form-control form-control-lg form-control-solid" type="text" name="email"
-											autocomplete="off">
+											autocomplete="on" required>
 										<!--end::Input-->
 										<div class="fv-plugins-message-container invalid-feedback"></div>
 									</div>
@@ -92,7 +75,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!--end::Wrapper-->
 										<!--begin::Input-->
 										<input class="form-control form-control-lg form-control-solid" type="password" name="password"
-											autocomplete="off">
+											autocomplete="off" required>
 										<!--end::Input-->
 										<div class="fv-plugins-message-container invalid-feedback"></div>
 									</div>
@@ -100,10 +83,11 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Actions-->
 									<div class="text-center">
 										<!--begin::Submit button-->
-										<button type="submit" id="kt_sign_in_submit" class="btn btn-lg btn-success w-100 mb-5">
+										<button type="submit" class="btn btn-lg btn-success w-100 mb-5">
 											<span class="indicator-label">Continue</span>
-											<span class="indicator-progress">Please wait...
-												<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+											<!-- <span class="indicator-progress">Please wait...
+												<span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+											</span> -->
 										</button>
 										<!--end::Submit button-->
 									</div>
@@ -144,7 +128,7 @@ License: For each use you must have a valid license purchased only from above li
 										<div class="modal-body">
 											<!--begin::Form-->
 											<form id="kt_account_profile_details_form" class="form fv-plugins-bootstrap5 fv-plugins-framework"
-												action="#">
+												action="Registration" name="opdreg">
 												<!--begin::Card body-->
 												<div class="card-body">
 										
@@ -169,7 +153,7 @@ License: For each use you must have a valid license purchased only from above li
 																<div class="mb-3">
 																	<label class="form-label">Registration No.<span class="text-danger">*</span></label>
 																	<div class="d-flex">
-																		<input type="text" class="form-control me-3" name="reg-num" onkeyup="sendInfo()">
+																		<input type="text" class="form-control me-3" name="regnum" id="regNum" onkeyup="sendInfo()">
 																		<button type="submit" class="btn btn-primary">Search</button>
 																	</div>
 																</div>
@@ -194,7 +178,7 @@ License: For each use you must have a valid license purchased only from above li
 														
 														<div class="col-md-3">
 															<label class="form-label">Name<span class="text-danger">*</span></label>
-															<input type="text" class="form-control" id="" name="name">
+															<input type="text" class="form-control" id="name" name="name">
 														</div>
 
 														<div class="col-md-3">
@@ -257,7 +241,7 @@ License: For each use you must have a valid license purchased only from above li
 															<label class="form-label">Doctor Name<span class="text-danger">*</span></label>
 															<select id="" class="form-select" name="doctor">
 																<option selected>Choose...</option>
-																<option value=""></option>
+																<option value="Deepkumar">Deepkumar</option>
 															</select>
 														</div>
 
@@ -265,7 +249,7 @@ License: For each use you must have a valid license purchased only from above li
 															<label class="form-label">Doctor Department<span class="text-danger">*</span></label>
 															<select id="" class="form-select" name="department">
 																<option selected>Choose...</option>
-																<option value=""></option>
+																<option value="test">test</option>
 															</select>
 														</div>
 													
@@ -308,6 +292,13 @@ License: For each use you must have a valid license purchased only from above li
 																Please check this before submitting the form
 															</label>
 														</div>
+														
+														<!--begin::Actions-->
+														<div class="card-footer d-flex justify-content-end py-6 px-9">
+															<button type="reset" class="btn btn-light btn-active-light-primary me-2">Reset</button>
+															<button type="submit" class="btn btn-primary" id="kt_account_profile_details_submit">Save Changes</button>
+														</div>
+														<!--end::Actions-->
 													</div>
 										
 										
@@ -315,12 +306,7 @@ License: For each use you must have a valid license purchased only from above li
 										
 												</div>
 												<!--end::Card body-->
-												<!--begin::Actions-->
-												<div class="card-footer d-flex justify-content-end py-6 px-9">
-													<button type="reset" class="btn btn-light btn-active-light-primary me-2">Reset</button>
-													<button type="submit" class="btn btn-primary" id="kt_account_profile_details_submit">Save Changes</button>
-												</div>
-												<!--end::Actions-->
+												
 											</form>
 											<!--end::Form-->
 										</div>
@@ -361,6 +347,53 @@ License: For each use you must have a valid license purchased only from above li
 		<!--end::Root-->
 		<!--end::Main-->
 		<!--begin::Javascript-->
+		<script>
+		var request;
+		function sendInfo() {
+			console.log("fun entered");
+			var v = document.getElementById('regNum').value;
+			var url = "fetch.jsp?val=" + v;
+
+			if (window.XMLHttpRequest) {
+				request = new XMLHttpRequest();
+			}
+			else if (window.ActiveXObject) {
+				request = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+
+			try {
+				request.onreadystatechange = getInfo;
+				request.open("GET", url, true);
+				request.send();
+			}
+			catch (e) {
+				alert("Unable to connect to server");
+			}
+		}
+
+		function getInfo() {
+			if (request.readyState == 4) {
+				var val = request.responseText;
+				console.log(val);
+				var temp = new Array();
+				// This will return an array with strings "1", "2", etc.
+				temp = val.split(",");
+				document.opdreg.name.value = temp[1];
+				document.opdreg.dob.value = temp[2];
+				document.opdreg.age.value = temp[3];
+				document.opdreg.gender.value = temp[4];
+				document.opdreg.mobile.value = temp[5];
+				document.opdreg.whatsapp.value = temp[6];
+				document.opdreg.email.value = temp[7];
+				document.opdreg.nation.value = temp[8];
+				document.opdreg.purpose.value = temp[9];
+				document.opdreg.visiting.value = temp[10];
+				document.opdreg.doctor.value = temp[11];
+				document.opdreg.department.value = temp[12];
+				document.opdreg.address.value = temp[13];
+			}
+		}
+		</script>
 		<script>var hostUrl = "assets/";</script>
 		<!--begin::Global Javascript Bundle(used by all pages)-->
 		<script src="assets/plugins/global/plugins.bundle.js"></script>
@@ -368,7 +401,7 @@ License: For each use you must have a valid license purchased only from above li
 		<!--end::Global Javascript Bundle-->
 		<!--begin::Page Custom Javascript(used by this page)-->
 		<script src="assets/js/custom/authentication/sign-in/general.js"></script>
-		<script src="/dist/main.js"></script>
+		<script src="main.js"></script>
 		<!--end::Page Custom Javascript-->
 		<!--end::Javascript-->
 	</body>
