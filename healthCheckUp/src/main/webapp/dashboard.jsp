@@ -67,7 +67,7 @@ License: For each use you must have a valid license purchased only from above li
 								<!--end::Aside  toggle-->
 								<!--begin::Logo-->
 								<a href="../../demo14/dist/index.html">
-									<img alt="Logo" src="assets/media/CIMS-Logo.png" class="h-25px h-lg-30px" />
+									<!-- <img alt="Logo" src="assets/media/CIMS-Logo.png" class="h-25px h-lg-30px" /> -->
 								</a>
 								<!--end::Logo-->
 							</div>
@@ -245,76 +245,6 @@ License: For each use you must have a valid license purchased only from above li
 											</div>
 										</div>
 										<!-- dashboard -->
-										<!-- OPD -->
-										<div data-kt-menu-trigger="click" class="menu-item here menu-accordion">
-											<span class="menu-link">
-												<span class="menu-icon">
-													<!--begin::Svg Icon | path: icons/duotune/general/gen025.svg-->
-													<span class="svg-icon svg-icon-2">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-															<rect x="2" y="2" width="9" height="9" rx="2" fill="black" />
-															<rect opacity="0.3" x="13" y="2" width="9" height="9" rx="2" fill="black" />
-															<rect opacity="0.3" x="13" y="13" width="9" height="9" rx="2" fill="black" />
-															<rect opacity="0.3" x="2" y="13" width="9" height="9" rx="2" fill="black" />
-														</svg>
-													</span>
-													<!--end::Svg Icon-->
-												</span>
-												<span class="menu-title">OPD</span>
-												<span class="menu-arrow"></span>
-											</span>
-											<div class="menu-sub menu-sub-accordion menu-active-bg">
-												<div class="menu-item">
-													<a class="menu-link" href="../../demo14/dist/index.html">
-														<span class="menu-bullet">
-															<span class="bullet bullet-dot"></span>
-														</span>
-														<span class="menu-title">OPD Waiting List</span>
-													</a>
-												</div>
-												<div class="menu-item">
-													<a class="menu-link" href="../../demo14/dist/dashboards/ecommerce.html">
-														<span class="menu-bullet">
-															<span class="bullet bullet-dot"></span>
-														</span>
-														<span class="menu-title">HC Registration</span>
-													</a>
-												</div>
-												<div class="menu-item">
-													<a class="menu-link" href="../../demo14/dist/dashboards/ecommerce.html">
-														<span class="menu-bullet">
-															<span class="bullet bullet-dot"></span>
-														</span>
-														<span class="menu-title">HC Primary Doctor</span>
-													</a>
-												</div>
-												<div class="menu-item">
-													<a class="menu-link" href="../../demo14/dist/dashboards/ecommerce.html">
-														<span class="menu-bullet">
-															<span class="bullet bullet-dot"></span>
-														</span>
-														<span class="menu-title">HC Assistant</span>
-													</a>
-												</div>
-												<div class="menu-item">
-													<a class="menu-link" href="../../demo14/dist/dashboards/ecommerce.html">
-														<span class="menu-bullet">
-															<span class="bullet bullet-dot"></span>
-														</span>
-														<span class="menu-title">HC Billing</span>
-													</a>
-												</div>
-												<div class="menu-item">
-													<a class="menu-link" href="../../demo14/dist/dashboards/ecommerce.html">
-														<span class="menu-bullet">
-															<span class="bullet bullet-dot"></span>
-														</span>
-														<span class="menu-title">OPD Report </span>
-													</a>
-												</div>
-											</div>
-										</div>
-										<!-- OPD -->
 										<div class="menu-item">
 											<div class="menu-content pt-8 pb-2">
 												<span class="menu-section text-muted text-uppercase fs-8 ls-1">OPD</span>
@@ -426,7 +356,7 @@ License: For each use you must have a valid license purchased only from above li
 										<!-- Department -->
 										<div class="menu-item">
 											<div class="menu-content pt-8 pb-2">
-												<span class="menu-section text-muted text-uppercase fs-8 ls-1">Department/span>
+												<span class="menu-section text-muted text-uppercase fs-8 ls-1">Department</span>
 											</div>
 										</div>
 										<div data-kt-menu-trigger="click" class="menu-item menu-accordion">

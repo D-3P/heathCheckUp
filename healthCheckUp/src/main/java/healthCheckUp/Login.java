@@ -49,7 +49,7 @@ public class Login extends HttpServlet {
 					 * session.setAttribute("role",role); session.setAttribute("email",email);
 					 * resp.sendRedirect("studentHome.jsp"); }
 					 */
-					resp.sendRedirect("dashboard.jsp");
+					resp.sendRedirect("hcRegistration.jsp");
 
 				} else {
 					PrintWriter out = resp.getWriter();
